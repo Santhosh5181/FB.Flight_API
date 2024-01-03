@@ -1,0 +1,100 @@
+{
+	"Routes": [
+		{
+			"DownstreamPathTemplate": "/api/Account",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 15302
+				}
+			],
+			"UpstreamPathTemplate": "/FB/Account",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+		},
+		{
+			"DownstreamPathTemplate": "/api/Account/{catchall}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 15302
+				}
+			],
+			"UpstreamPathTemplate": "/FB/Account/{catchall}",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+		},
+		{
+			"DownstreamPathTemplate": "/api/Admin",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 22484
+				}
+			],
+			"UpstreamPathTemplate": "/FB/Admin",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+		},
+		{
+			"DownstreamPathTemplate": "/api/Admin/{catchall}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 22484
+				}
+			],
+			"UpstreamPathTemplate": "/FB/Admin/{catchall}",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+		},
+		{
+			"DownstreamPathTemplate": "/api/Ticket",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 23226
+				}
+			],
+			"UpstreamPathTemplate": "/FB/Ticket",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+		},
+		{
+			"DownstreamPathTemplate": "/api/Ticket/{catchall}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 23226
+				}
+			],
+			"UpstreamPathTemplate": "/FB/Ticket/{catchall}",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+		},
+		{
+			"DownstreamPathTemplate": "/api/Supplier",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 45041
+				}
+			],
+			"UpstreamPathTemplate": "/Eshop/Supplier",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+		},
+		{
+			"DownstreamPathTemplate": "/api/Supplier/{catchall}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 45041
+				}
+			],
+			"UpstreamPathTemplate": "/Eshop/Supplier/{catchall}",
+			"UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+		}
+	]
+}
